@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Mensagem de alerta</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Bootstrap Alert</h1>
+        </div>
+
+        <!--"role" define a função dos componentes para os leitores de telas-->
+        <div class="alert alert-success" role="alert">
+            <!--"aira" acessibilidade-->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                <!--"aria-hidden" esconde o icone para os leitores de telas-->
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Sucesso</strong> ao salvar!
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Informações</strong> adicionais.
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Aviso</strong> não faça isso.
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar"> 
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Erro!</strong> tente novamente!
+        </div>
+      
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
